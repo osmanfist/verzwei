@@ -56,13 +56,13 @@ export default function UpgradeModal() {
         </div>
         <div className='mx-auto p-6 space-y-6 text-neutral-700'>
           <h2 className='font-semibold text-xl'>
-            Upgrade to Visionize Pro.
+            Upgrade to Verzwei Pro.
           </h2>
           <p className='text-xs font-semibold text-neutral-600'>
-            Discover the finest offerings of Visionize. 
+            Discover the finest offerings of Verzwei. 
           </p>
           <div className='pl-3'>
-            {/* Promotional features of Visionize Pro */}
+            {/* Promotional features of Verzwei Pro */}
             <ul className='text-sm list-disc'>
               <li>Unlimited boards</li>
               <li>Enhanced security</li>

@@ -64,8 +64,8 @@ async function performAction(data: InputType): Promise<OutputType> {
             price_data: {
               currency: "USD",
               product_data: {
-                name: "Visionize Pro",
-                description: "Visionize Pro provides unlimited boards for your organization."
+                name: "Verzwei Pro",
+                description: "Verzwei Pro provides unlimited boards for your organization."
               },
               unit_amount: 2000,
               recurring: {

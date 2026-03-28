@@ -140,29 +140,29 @@ ncu -g
 ```sh
 npm outdated
 Package                    Current    Wanted    Latest  Location                                Depended by
-@clerk/nextjs                5.1.5     5.2.4     5.2.4  node_modules/@clerk/nextjs              visionize
-@prisma/client              5.15.0    5.17.0    5.17.0  node_modules/@prisma/client             visionize
-@radix-ui/react-accordion    1.1.2     1.2.0     1.2.0  node_modules/@radix-ui/react-accordion  visionize
-@radix-ui/react-avatar       1.0.4     1.1.0     1.1.0  node_modules/@radix-ui/react-avatar     visionize
-@radix-ui/react-dialog       1.0.5     1.1.1     1.1.1  node_modules/@radix-ui/react-dialog     visionize
-@radix-ui/react-label        2.0.2     2.1.0     2.1.0  node_modules/@radix-ui/react-label      visionize
-@radix-ui/react-popover      1.0.7     1.1.1     1.1.1  node_modules/@radix-ui/react-popover    visionize
-@radix-ui/react-separator    1.0.3     1.1.0     1.1.0  node_modules/@radix-ui/react-separator  visionize
-@radix-ui/react-slot         1.0.2     1.1.0     1.1.0  node_modules/@radix-ui/react-slot       visionize
-@radix-ui/react-tooltip      1.0.7     1.1.2     1.1.2  node_modules/@radix-ui/react-tooltip    visionize
-@tanstack/react-query       5.45.0   5.51.11   5.51.11  node_modules/@tanstack/react-query      visionize
-@types/node                20.14.2  20.14.11  20.14.11  node_modules/@types/node                visionize
-eslint                      8.57.0    8.57.0     9.7.0  node_modules/eslint                     visionize
-eslint-config-next          14.2.4    14.2.5    14.2.5  node_modules/eslint-config-next         visionize
-lucide-react               0.395.0   0.395.0   0.412.0  node_modules/lucide-react               visionize
-next                        14.2.4    14.2.5    14.2.5  node_modules/next                       visionize
-postcss                     8.4.38    8.4.39    8.4.39  node_modules/postcss                    visionize
-prisma                      5.15.0    5.17.0    5.17.0  node_modules/prisma                     visionize
-stripe                     15.12.0   15.12.0    16.2.0  node_modules/stripe                     visionize
-tailwind-merge               2.3.0     2.4.0     2.4.0  node_modules/tailwind-merge             visionize
-tailwindcss                  3.4.4     3.4.6     3.4.6  node_modules/tailwindcss                visionize
-typescript                   5.4.5     5.5.3     5.5.3  node_modules/typescript                 visionize
-zustand                      4.5.2     4.5.4     4.5.4  node_modules/zustand                    visionize
+@clerk/nextjs                5.1.5     5.2.4     5.2.4  node_modules/@clerk/nextjs              verzwei
+@prisma/client              5.15.0    5.17.0    5.17.0  node_modules/@prisma/client             verzwei
+@radix-ui/react-accordion    1.1.2     1.2.0     1.2.0  node_modules/@radix-ui/react-accordion  verzwei
+@radix-ui/react-avatar       1.0.4     1.1.0     1.1.0  node_modules/@radix-ui/react-avatar     verzwei
+@radix-ui/react-dialog       1.0.5     1.1.1     1.1.1  node_modules/@radix-ui/react-dialog     verzwei
+@radix-ui/react-label        2.0.2     2.1.0     2.1.0  node_modules/@radix-ui/react-label      verzwei
+@radix-ui/react-popover      1.0.7     1.1.1     1.1.1  node_modules/@radix-ui/react-popover    verzwei
+@radix-ui/react-separator    1.0.3     1.1.0     1.1.0  node_modules/@radix-ui/react-separator  verzwei
+@radix-ui/react-slot         1.0.2     1.1.0     1.1.0  node_modules/@radix-ui/react-slot       verzwei
+@radix-ui/react-tooltip      1.0.7     1.1.2     1.1.2  node_modules/@radix-ui/react-tooltip    verzwei
+@tanstack/react-query       5.45.0   5.51.11   5.51.11  node_modules/@tanstack/react-query      verzwei
+@types/node                20.14.2  20.14.11  20.14.11  node_modules/@types/node                verzwei
+eslint                      8.57.0    8.57.0     9.7.0  node_modules/eslint                     verzwei
+eslint-config-next          14.2.4    14.2.5    14.2.5  node_modules/eslint-config-next         verzwei
+lucide-react               0.395.0   0.395.0   0.412.0  node_modules/lucide-react               verzwei
+next                        14.2.4    14.2.5    14.2.5  node_modules/next                       verzwei
+postcss                     8.4.38    8.4.39    8.4.39  node_modules/postcss                    verzwei
+prisma                      5.15.0    5.17.0    5.17.0  node_modules/prisma                     verzwei
+stripe                     15.12.0   15.12.0    16.2.0  node_modules/stripe                     verzwei
+tailwind-merge               2.3.0     2.4.0     2.4.0  node_modules/tailwind-merge             verzwei
+tailwindcss                  3.4.4     3.4.6     3.4.6  node_modules/tailwindcss                verzwei
+typescript                   5.4.5     5.5.3     5.5.3  node_modules/typescript                 verzwei
+zustand                      4.5.2     4.5.4     4.5.4  node_modules/zustand                    verzwei
 ```
 
 chore: Update Next.js to v14.2.5
@@ -190,9 +190,9 @@ npm update --save
 npm outdated
 
 Package       Current   Wanted   Latest  Location                   Depended by
-eslint         8.57.0   8.57.0    9.7.0  node_modules/eslint        visionize
-lucide-react  0.395.0  0.395.0  0.414.0  node_modules/lucide-react  visionize
-stripe        15.12.0  15.12.0   16.2.0  node_modules/stripe        visionize
+eslint         8.57.0   8.57.0    9.7.0  node_modules/eslint        verzwei
+lucide-react  0.395.0  0.395.0  0.414.0  node_modules/lucide-react  verzwei
+stripe        15.12.0  15.12.0   16.2.0  node_modules/stripe        verzwei
 ```
 
 ## 2024/06/15
@@ -200,11 +200,11 @@ stripe        15.12.0  15.12.0   16.2.0  node_modules/stripe        visionize
 ```sh
 npm outdated                                                                                            
 Package                Current   Wanted   Latest  Location                            Depended by
-@clerk/nextjs            5.1.4    5.1.5    5.1.5  node_modules/@clerk/nextjs          visionize
-@tanstack/react-query   5.44.0   5.45.0   5.45.0  node_modules/@tanstack/react-query  visionize
-eslint                  8.57.0   8.57.0    9.5.0  node_modules/eslint                 visionize
-eslint-config-next      14.2.3   14.2.4   14.2.4  node_modules/eslint-config-next     visionize
-lucide-react           0.394.0  0.394.0  0.395.0  node_modules/lucide-react           visionize
+@clerk/nextjs            5.1.4    5.1.5    5.1.5  node_modules/@clerk/nextjs          verzwei
+@tanstack/react-query   5.44.0   5.45.0   5.45.0  node_modules/@tanstack/react-query  verzwei
+eslint                  8.57.0   8.57.0    9.5.0  node_modules/eslint                 verzwei
+eslint-config-next      14.2.3   14.2.4   14.2.4  node_modules/eslint-config-next     verzwei
+lucide-react           0.394.0  0.394.0  0.395.0  node_modules/lucide-react           verzwei
 ```
 
 chore: Update @clerk/nextjs to v5.1.5
@@ -224,11 +224,11 @@ npm update --save
 ```sh
 npm outdated                                                                                        
 Package                Current   Wanted   Latest  Location                            Depended by
-@tanstack/react-query   5.40.1   5.44.0   5.44.0  node_modules/@tanstack/react-query  visionize
-eslint                  8.57.0   8.57.0    9.4.0  node_modules/eslint                 visionize
-eslint-config-next      14.2.3   14.2.4   14.2.4  node_modules/eslint-config-next     visionize
-lucide-react           0.390.0  0.390.0  0.394.0  node_modules/lucide-react           visionize
-next                    14.2.3   14.2.4   14.2.4  node_modules/next                   visionize
+@tanstack/react-query   5.40.1   5.44.0   5.44.0  node_modules/@tanstack/react-query  verzwei
+eslint                  8.57.0   8.57.0    9.4.0  node_modules/eslint                 verzwei
+eslint-config-next      14.2.3   14.2.4   14.2.4  node_modules/eslint-config-next     verzwei
+lucide-react           0.390.0  0.390.0  0.394.0  node_modules/lucide-react           verzwei
+next                    14.2.3   14.2.4   14.2.4  node_modules/next                   verzwei
 ```
 
 chore: Update Next.js to v14.2.4
@@ -254,12 +254,12 @@ npm i lucide-react@latest
 ```sh
 npm outdated                                                                                            
 Package                 Current   Wanted   Latest  Location                            Depended by
-@clerk/nextjs            4.31.0   4.31.3    5.1.4  node_modules/@clerk/nextjs          visionize
-@tanstack/react-query    5.39.0   5.40.1   5.40.1  node_modules/@tanstack/react-query  visionize
-@types/node            20.12.12  20.14.2  20.14.2  node_modules/@types/node            visionize
-eslint                   8.57.0   8.57.0    9.4.0  node_modules/eslint                 visionize
-eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     visionize
-sonner                   1.4.41    1.5.0    1.5.0  node_modules/sonner                 visionize
+@clerk/nextjs            4.31.0   4.31.3    5.1.4  node_modules/@clerk/nextjs          verzwei
+@tanstack/react-query    5.39.0   5.40.1   5.40.1  node_modules/@tanstack/react-query  verzwei
+@types/node            20.12.12  20.14.2  20.14.2  node_modules/@types/node            verzwei
+eslint                   8.57.0   8.57.0    9.4.0  node_modules/eslint                 verzwei
+eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     verzwei
+sonner                   1.4.41    1.5.0    1.5.0  node_modules/sonner                 verzwei
 ```
 
 chore: Update sonner to v1.5.0
@@ -284,7 +284,7 @@ chore: Update eslint dev dependencies
 
 ```sh
 Package  Current  Wanted  Latest  Location             Depended by
-eslint    8.57.0  8.57.0   9.4.0  node_modules/eslint  visionize
+eslint    8.57.0  8.57.0   9.4.0  node_modules/eslint  verzwei
 ```
 
 ## 2024/06/07
@@ -292,15 +292,15 @@ eslint    8.57.0  8.57.0   9.4.0  node_modules/eslint  visionize
 ```sh
 npm outdated
 Package                 Current   Wanted   Latest  Location                            Depended by
-@clerk/nextjs            4.31.0   4.31.3    5.1.4  node_modules/@clerk/nextjs          visionize
-@tanstack/react-query    5.39.0   5.40.1   5.40.1  node_modules/@tanstack/react-query  visionize
-@types/node            20.12.12  20.14.2  20.14.2  node_modules/@types/node            visionize
-eslint                   8.57.0   8.57.0    9.4.0  node_modules/eslint                 visionize
-eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     visionize
-lucide-react            0.307.0  0.307.0  0.390.0  node_modules/lucide-react           visionize
-next                     14.0.4   14.0.4   14.2.3  node_modules/next                   visionize
-tailwindcss               3.4.3    3.4.4    3.4.4  node_modules/tailwindcss            visionize
-usehooks-ts              2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts            visionize
+@clerk/nextjs            4.31.0   4.31.3    5.1.4  node_modules/@clerk/nextjs          verzwei
+@tanstack/react-query    5.39.0   5.40.1   5.40.1  node_modules/@tanstack/react-query  verzwei
+@types/node            20.12.12  20.14.2  20.14.2  node_modules/@types/node            verzwei
+eslint                   8.57.0   8.57.0    9.4.0  node_modules/eslint                 verzwei
+eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     verzwei
+lucide-react            0.307.0  0.307.0  0.390.0  node_modules/lucide-react           verzwei
+next                     14.0.4   14.0.4   14.2.3  node_modules/next                   verzwei
+tailwindcss               3.4.3    3.4.4    3.4.4  node_modules/tailwindcss            verzwei
+usehooks-ts              2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts            verzwei
 ```
 
 chore: Update Next.js to v14.2.3
@@ -326,11 +326,11 @@ Log after updates:
 
 ```sh
 Package                 Current   Wanted   Latest  Location                            Depended by
-@clerk/nextjs            4.31.0   4.31.3    5.1.4  node_modules/@clerk/nextjs          visionize
-@tanstack/react-query    5.39.0   5.40.1   5.40.1  node_modules/@tanstack/react-query  visionize
-@types/node            20.12.12  20.14.2  20.14.2  node_modules/@types/node            visionize
-eslint                   8.57.0   8.57.0    9.4.0  node_modules/eslint                 visionize
-eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     visionize
+@clerk/nextjs            4.31.0   4.31.3    5.1.4  node_modules/@clerk/nextjs          verzwei
+@tanstack/react-query    5.39.0   5.40.1   5.40.1  node_modules/@tanstack/react-query  verzwei
+@types/node            20.12.12  20.14.2  20.14.2  node_modules/@types/node            verzwei
+eslint                   8.57.0   8.57.0    9.4.0  node_modules/eslint                 verzwei
+eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     verzwei
 ```
 
 ## 2024/05/25
@@ -340,14 +340,14 @@ eslint-config-next       14.0.4   14.0.4   14.2.3  node_modules/eslint-config-ne
 npm outdated                                                                                                    
 
 Package                Current   Wanted   Latest  Location                            Depended by
-@clerk/nextjs           4.31.0   4.31.0    5.1.2  node_modules/@clerk/nextjs          visionize
-@tanstack/react-query   5.37.1   5.39.0   5.39.0  node_modules/@tanstack/react-query  visionize
-@types/react            18.3.2   18.3.3   18.3.3  node_modules/@types/react           visionize
-eslint                  8.57.0   8.57.0    9.3.0  node_modules/eslint                 visionize
-eslint-config-next      14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     visionize
-lucide-react           0.307.0  0.307.0  0.379.0  node_modules/lucide-react           visionize
-next                    14.0.4   14.0.4   14.2.3  node_modules/next                   visionize
-usehooks-ts             2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts            visionize
+@clerk/nextjs           4.31.0   4.31.0    5.1.2  node_modules/@clerk/nextjs          verzwei
+@tanstack/react-query   5.37.1   5.39.0   5.39.0  node_modules/@tanstack/react-query  verzwei
+@types/react            18.3.2   18.3.3   18.3.3  node_modules/@types/react           verzwei
+eslint                  8.57.0   8.57.0    9.3.0  node_modules/eslint                 verzwei
+eslint-config-next      14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next     verzwei
+lucide-react           0.307.0  0.307.0  0.379.0  node_modules/lucide-react           verzwei
+next                    14.0.4   14.0.4   14.2.3  node_modules/next                   verzwei
+usehooks-ts             2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts            verzwei
 ```
 
 chore: Update @tanstack/react-query & @types/react
@@ -356,12 +356,12 @@ chore: Update @tanstack/react-query & @types/react
 npm update --save
 
 Package             Current   Wanted   Latest  Location                         Depended by
-@clerk/nextjs        4.31.0   4.31.0    5.1.2  node_modules/@clerk/nextjs       visionize
-eslint               8.57.0   8.57.0    9.3.0  node_modules/eslint              visionize
-eslint-config-next   14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next  visionize
-lucide-react        0.307.0  0.307.0  0.379.0  node_modules/lucide-react        visionize
-next                 14.0.4   14.0.4   14.2.3  node_modules/next                visionize
-usehooks-ts          2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts         visionize
+@clerk/nextjs        4.31.0   4.31.0    5.1.2  node_modules/@clerk/nextjs       verzwei
+eslint               8.57.0   8.57.0    9.3.0  node_modules/eslint              verzwei
+eslint-config-next   14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next  verzwei
+lucide-react        0.307.0  0.307.0  0.379.0  node_modules/lucide-react        verzwei
+next                 14.0.4   14.0.4   14.2.3  node_modules/next                verzwei
+usehooks-ts          2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts         verzwei
 ```
 
 ## 2024/05/20
@@ -371,27 +371,27 @@ usehooks-ts          2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts         
 npm outdated
 
 Package                Current    Wanted    Latest  Location                            Depended by
-@clerk/nextjs           4.29.3    4.31.0     5.1.0  node_modules/@clerk/nextjs          visionize
-@tanstack/react-query   5.32.0    5.37.1    5.37.1  node_modules/@tanstack/react-query  visionize
-@types/node            20.10.7  20.12.12  20.12.12  node_modules/@types/node            visionize
-@types/react           18.2.47    18.3.2    18.3.2  node_modules/@types/react           visionize
-@types/react-dom       18.2.18    18.3.0    18.3.0  node_modules/@types/react-dom       visionize
-autoprefixer           10.4.16   10.4.19   10.4.19  node_modules/autoprefixer           visionize
-clsx                     2.1.0     2.1.1     2.1.1  node_modules/clsx                   visionize
-eslint                  8.56.0    8.57.0     9.3.0  node_modules/eslint                 visionize
-eslint-config-next      14.0.4    14.0.4    14.2.3  node_modules/eslint-config-next     visionize
-lucide-react           0.307.0   0.307.0   0.379.0  node_modules/lucide-react           visionize
-next                    14.0.4    14.0.4    14.2.3  node_modules/next                   visionize
-postcss                 8.4.33    8.4.38    8.4.38  node_modules/postcss                visionize
-react                   18.2.0    18.3.1    18.3.1  node_modules/react                  visionize
-react-dom               18.2.0    18.3.1    18.3.1  node_modules/react-dom              visionize
-sonner                   1.4.0    1.4.41    1.4.41  node_modules/sonner                 visionize
-tailwind-merge           2.2.0     2.3.0     2.3.0  node_modules/tailwind-merge         visionize
-tailwindcss              3.4.1     3.4.3     3.4.3  node_modules/tailwindcss            visionize
-typescript               5.3.3     5.4.5     5.4.5  node_modules/typescript             visionize
-usehooks-ts              2.9.5    2.16.0     3.1.0  node_modules/usehooks-ts            visionize
-zod                     3.22.4    3.23.8    3.23.8  node_modules/zod                    visionize
-zustand                  4.5.0     4.5.2     4.5.2  node_modules/zustand                visionize
+@clerk/nextjs           4.29.3    4.31.0     5.1.0  node_modules/@clerk/nextjs          verzwei
+@tanstack/react-query   5.32.0    5.37.1    5.37.1  node_modules/@tanstack/react-query  verzwei
+@types/node            20.10.7  20.12.12  20.12.12  node_modules/@types/node            verzwei
+@types/react           18.2.47    18.3.2    18.3.2  node_modules/@types/react           verzwei
+@types/react-dom       18.2.18    18.3.0    18.3.0  node_modules/@types/react-dom       verzwei
+autoprefixer           10.4.16   10.4.19   10.4.19  node_modules/autoprefixer           verzwei
+clsx                     2.1.0     2.1.1     2.1.1  node_modules/clsx                   verzwei
+eslint                  8.56.0    8.57.0     9.3.0  node_modules/eslint                 verzwei
+eslint-config-next      14.0.4    14.0.4    14.2.3  node_modules/eslint-config-next     verzwei
+lucide-react           0.307.0   0.307.0   0.379.0  node_modules/lucide-react           verzwei
+next                    14.0.4    14.0.4    14.2.3  node_modules/next                   verzwei
+postcss                 8.4.33    8.4.38    8.4.38  node_modules/postcss                verzwei
+react                   18.2.0    18.3.1    18.3.1  node_modules/react                  verzwei
+react-dom               18.2.0    18.3.1    18.3.1  node_modules/react-dom              verzwei
+sonner                   1.4.0    1.4.41    1.4.41  node_modules/sonner                 verzwei
+tailwind-merge           2.2.0     2.3.0     2.3.0  node_modules/tailwind-merge         verzwei
+tailwindcss              3.4.1     3.4.3     3.4.3  node_modules/tailwindcss            verzwei
+typescript               5.3.3     5.4.5     5.4.5  node_modules/typescript             verzwei
+usehooks-ts              2.9.5    2.16.0     3.1.0  node_modules/usehooks-ts            verzwei
+zod                     3.22.4    3.23.8    3.23.8  node_modules/zod                    verzwei
+zustand                  4.5.0     4.5.2     4.5.2  node_modules/zustand                verzwei
 ```
 
 chore: Update dependencies to latest semver range
@@ -401,10 +401,10 @@ npm update --save
 npm outdated
 
 Package             Current   Wanted   Latest  Location                         Depended by
-@clerk/nextjs        4.31.0   4.31.0    5.1.0  node_modules/@clerk/nextjs       visionize
-eslint               8.57.0   8.57.0    9.3.0  node_modules/eslint              visionize
-eslint-config-next   14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next  visionize
-lucide-react        0.307.0  0.307.0  0.379.0  node_modules/lucide-react        visionize
-next                 14.0.4   14.0.4   14.2.3  node_modules/next                visionize
-usehooks-ts          2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts         visionize
+@clerk/nextjs        4.31.0   4.31.0    5.1.0  node_modules/@clerk/nextjs       verzwei
+eslint               8.57.0   8.57.0    9.3.0  node_modules/eslint              verzwei
+eslint-config-next   14.0.4   14.0.4   14.2.3  node_modules/eslint-config-next  verzwei
+lucide-react        0.307.0  0.307.0  0.379.0  node_modules/lucide-react        verzwei
+next                 14.0.4   14.0.4   14.2.3  node_modules/next                verzwei
+usehooks-ts          2.16.0   2.16.0    3.1.0  node_modules/usehooks-ts         verzwei
 ```

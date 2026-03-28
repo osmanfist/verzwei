@@ -1,6 +1,6 @@
-# Visionize
+# Verzwei
 
-Visualize and realize your vision with **Visionize**, a productivity application that allows you to organize your tasks and projects using boards, lists and cards.
+Visualize and realize your vision with **Verzwei**, a productivity application that allows you to organize your tasks and projects using boards, lists and cards.
 
 Whether you are using individually or collaborating with a team, you can use this app to set goals, track progress and manage deadlines.
 
@@ -8,7 +8,7 @@ Inspired by [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), (ÁúãÊù
 
 # Description
 
-Visionize is a productivity app for organizing tasks with boards, lists, and cards. Built with Next.js 14, TypeScript, React, TailwindCSS, Prisma ORM, PostgreSQL, Clerk, Stripe, zustand, react-query, and shadcn/ui. Features CRUD, drag-and-drop, audit logs, Zod validation, and freemium capabilities.
+Verzwei is a productivity app for organizing tasks with boards, lists, and cards. Built with Next.js 14, TypeScript, React, TailwindCSS, Prisma ORM, PostgreSQL, Clerk, Stripe, zustand, react-query, and shadcn/ui. Features CRUD, drag-and-drop, audit logs, Zod validation, and freemium capabilities.
 
 Based on the kanban method, this app is a tool to visualize workflow in three steps:
 
@@ -130,7 +130,7 @@ View a complete audit history of all actions taken across boards.
     In the terminal:
 
     ```powershell
-    cd /visionize
+    cd /verzwei
     ```
 
 **3. Install dependencies**

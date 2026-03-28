@@ -15,7 +15,7 @@ const Logo = () => {
       <div className='hover:opacity-75 transition items-center gap-x-2 hidden md:flex'>
         <Image 
           src='/logo.svg'
-          alt='Logo for Visionize'
+          alt='Logo for Verzwei'
           height={30}
           width={30}
         />
@@ -23,7 +23,7 @@ const Logo = () => {
           'text-xl text-neutral-700 px-1 pt-1',
           headingFont.className,
         )}>
-          Visionize
+          Verzwei
         </p>
       </div>
     </Link>

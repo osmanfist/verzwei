@@ -58,7 +58,7 @@ export default function LandingPage() {
         </div>
         {/* Headings */}
         <h1 className='text-3xl md:text-6xl text-center text-neutral-800 mb-6'>
-          <span className='mr-1'><strong>Visionize</strong></span> your tasks
+          <span className='mr-1'><strong>Verzwei</strong></span> your tasks
         </h1>
         <div className={cn('text-2xl md:text-6xl text-white p-3 md:p-4 rounded-md w-fit',
         gradient[2],
@@ -71,7 +71,7 @@ export default function LandingPage() {
         'text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto',
         textFont.className,
       )}>
-        Fight mediocrity with Visionize. With just boards, lists and cards you can 
+        Fight mediocrity with Verzwei. With just boards, lists and cards you can 
         get a clear overview of your tasks. Then you can plan, prioritize, and
         execute your goals with confidence.      
         You can drag and drop tasks, add labels and due dates, attach files 
@@ -80,7 +80,7 @@ export default function LandingPage() {
       {/* Sign-Up Link */}
       <Button className='mt-6' size='lg' asChild>
         <Link href="/sign-up">
-          Try Visionize for free
+          Try Verzwei for free
         </Link>
       </Button>
     </div>

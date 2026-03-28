@@ -1,8 +1,8 @@
-# Architectural Decision Log for **Visionize**
+# Architectural Decision Log for **Verzwei**
 
 ***My aim in writing this document was to share the positive impact it made on me with you.***
 
-**Visionize** is a Next.js 14 Kanban productivity app designed for task management. Built with a focus on server actions, utilizes the [FormData Web API](https://developer.mozilla.org/en-US/docs/Web/API/FormData), and implements loading and error states using React hooks such as [useFormStatus](https://react.dev/reference/react-dom/hooks/useFormStatus) and [useFormState](https://react.dev/reference/react-dom/hooks/useFormState).
+**Verzwei** is a Next.js 14 Kanban productivity app designed for task management. Built with a focus on server actions, utilizes the [FormData Web API](https://developer.mozilla.org/en-US/docs/Web/API/FormData), and implements loading and error states using React hooks such as [useFormStatus](https://react.dev/reference/react-dom/hooks/useFormStatus) and [useFormState](https://react.dev/reference/react-dom/hooks/useFormState).
 
 This is simply the documentation for the process of building the project. This is like my `journey.md` files that come with my previous projects, but this time I will also explain the rationale behind certain choices and design decisions made while making this project.
 
@@ -28,9 +28,9 @@ Here are some links if you are interested in learning more about ADR:
 
 With that out of the way, let's move on to development.
 
-# Visionize
+# Verzwei
 
-*Visualize* and *realize* your vision with Visionize, a task management app that will help you reach your goals.
+*Visualize* and *realize* your vision with Verzwei, a task management app that will help you reach your goals.
 
 Inspired by the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)) development process, allows users to view their progress and process, from start to finish.
 
@@ -110,7 +110,7 @@ Packages
 
 Add note on service pricing to commercial feasibility
 
-Explain why services such as Clerk is not a viable option for visionize in the long-term due to its high per-user cost. Compare Clerk's pricing with other authentication providers and suggest alternatives.
+Explain why services such as Clerk is not a viable option for verzwei in the long-term due to its high per-user cost. Compare Clerk's pricing with other authentication providers and suggest alternatives.
 
 A collaboration app that uses organizations even on a decent free-to-paid plan conversion rate, we can take a look at the costs. $0.02 per Monthly Active User (MAU) after 10,000 with $25 on the pro plan. Then we include the cost for every additional MAO (Monthly Active Organization) for $1 each. Not to mention all the overhead costs for additional features such as "authentication add-on" and more, then for a small business it is no longer feasible to use Clerk. Because this assumes that every user is a paid user which is not the case for this app.
 
@@ -191,7 +191,7 @@ Let's get started with [Next.js 14 - App Router](https://nextjs.org/docs).
 - [Nextjs Installation](https://nextjs.org/docs/getting-started/installation)
 
 ```sh
-npx create-next-app@latest visionize
+npx create-next-app@latest verzwei
 ```
 
 Now we answer the prompts that defines the set up of our project
@@ -346,7 +346,7 @@ Let's look at the entry point to our application, the home page. We'll remove th
 export default function Home() {
   return (
     <div className="text-sky-500">
-      Visionize
+      Verzwei
     </div>
   )
 }
@@ -367,12 +367,12 @@ The meta description should consist of the following elements:
 - The name of your app and its main feature (kanban-style productivity app)
 - The benefit of using your app (turn your vision into reality)
 - The main functionalities of your app (boards, lists, and cards)
-- A call to action (try Visionize for free today)
+- A call to action (try Verzwei for free today)
 
 ```sh
-Visionize is a kanban-style productivity app that helps you turn your vision into reality. Plan, prioritize, and execute your goals with boards, lists, and cards. Visionize your tasks with visionary kanban boards. Try Visionize for free today.
+Verzwei is a kanban-style productivity app that helps you turn your vision into reality. Plan, prioritize, and execute your goals with boards, lists, and cards. Verzwei your tasks with visionary kanban boards. Try Verzwei for free today.
 ```
-May even mention a catchy slogan such as "*Visionize your tasks with visionary kanban boards*". As we want to draw the connection between visonary (i.e., (especially of a person) thinking about or planning the future with imagination or wisdom) and visual representation of the tasks.
+May even mention a catchy slogan such as "*Verzwei your tasks with visionary kanban boards*". As we want to draw the connection between visonary (i.e., (especially of a person) thinking about or planning the future with imagination or wisdom) and visual representation of the tasks.
 
 Let's add the static metadata to our global layout. Inside `app\layout.tsx`, we modify the properties of the `metadata` object. 
 
@@ -384,11 +384,11 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Visionize',
-  description: `Visionize is a kanban-style productivity app that helps you
+  title: 'Verzwei',
+  description: `Verzwei is a kanban-style productivity app that helps you
   turn your vision into reality. Plan, prioritize, and execute your goals
-  with boards, lists, and cards. Visionize your tasks with visionary kanban
-  boards. Try Visionize for free today.`,
+  with boards, lists, and cards. Verzwei your tasks with visionary kanban
+  boards. Try Verzwei for free today.`,
 }
 
 export default function RootLayout({
@@ -423,11 +423,11 @@ Create a folder named `config` at the root of the project, then create a file na
 `/config`
 ```ts
 export const siteConfig = {
-  name: "Visionize",
-  description: `Visionize is a kanban-style productivity app that helps you
+  name: "Verzwei",
+  description: `Verzwei is a kanban-style productivity app that helps you
   turn your vision into reality. Plan, prioritize, and execute your goals
-  with boards, lists, and cards. Visionize your tasks with visionary kanban
-  boards. Try Visionize for free today.`,
+  with boards, lists, and cards. Verzwei your tasks with visionary kanban
+  boards. Try Verzwei for free today.`,
 };
 ```
 
@@ -449,10 +449,10 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
-  description: `Visionize is a kanban-style productivity app that helps you
+  description: `Verzwei is a kanban-style productivity app that helps you
   turn your vision into reality. Plan, prioritize, and execute your goals
-  with boards, lists, and cards. Visionize your tasks with visionary kanban
-  boards. Try Visionize for free today.`,
+  with boards, lists, and cards. Verzwei your tasks with visionary kanban
+  boards. Try Verzwei for free today.`,
 }
 
 export default function RootLayout({
@@ -473,8 +473,8 @@ This code is using the **config-based metadata** [feature of Next.js](https://ne
 The `metadata` object t exported from the `page.tsx` file contains the following fields:
 
 - `title`: an object that specifies the title of your page. It has two properties:
-    - `default`: the default title of your page, which is the name of your app (`Visionize`) from the `siteConfig` object that you imported.
-    - `template`: a template string that can be used to generate dynamic titles based on the current route. It uses `%s` as a placeholder for the route-specific title, and appends the app name after a `|` character. For example, if the route-specific title is `Home`, the template will produce `Home | Visionize`.
+    - `default`: the default title of your page, which is the name of your app (`Verzwei`) from the `siteConfig` object that you imported.
+    - `template`: a template string that can be used to generate dynamic titles based on the current route. It uses `%s` as a placeholder for the route-specific title, and appends the app name after a `|` character. For example, if the route-specific title is `Home`, the template will produce `Home | Verzwei`.
 - `description`: a string that describes your app and its features. This will be used as the content of the `<meta name="description">` tag in the `<head>` element of your page.
 
 The `RootLayout` component that you exported as the default export from the `page.tsx` file is a **Server Component** that renders the `<html>` and `<body>` elements of your page. It also imports the `Inter` font from Google Fonts and applies it to the `<body>` element using the `inter.className` property. The `RootLayout` component takes a `children` prop, which is the content of your page, and renders it inside the `<body>` element.
@@ -581,7 +581,7 @@ export default function LandingPage() {
       <div className='flex items-center justify-center flex-col'>
         <div>
           <Medal className='h-6 w-6 mr-2'/>
-          Achieve more with <strong><em>Visionize</em></strong>, the ultimate task management app
+          Achieve more with <strong><em>Verzwei</em></strong>, the ultimate task management app
         </div>
       </div>
     </div>
@@ -603,7 +603,7 @@ export default function LandingPage() {
       <div className='flex items-center justify-center flex-col'>
         <div className='mb-4 flex items-center border shadow-sm p-4 bg-amber-100 text-amber-700 rounded-full uppercase'>
           <KanbanSquare className='h-6 w-6 mr-2'/>
-          <span className='mr-1'><strong>Visionize</strong></span> your tasks
+          <span className='mr-1'><strong>Verzwei</strong></span> your tasks
           <ClipboardCheck className='h-6 w-6 mx-2'/>
         </div>
       </div>
@@ -625,7 +625,7 @@ export default function LandingPage() {
           <ClipboardCheck className='h-6 w-6 mx-2'/>
         </div>
         <h1 className='text-3xl md:text-6xl text-center text-neutral-800 mb-6'>
-          <span className='mr-1'><strong>Visionize</strong></span> your tasks
+          <span className='mr-1'><strong>Verzwei</strong></span> your tasks
         </h1>
         <div className='text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit'>
           Turn your vision into reality.
@@ -636,7 +636,7 @@ export default function LandingPage() {
 }
 ```
 
-Going to brainstorm some ideas of some promotional text I could use here. Visionize allows for: project management, task management, brainstorming, resource hub, meetings and onboarding.
+Going to brainstorm some ideas of some promotional text I could use here. Verzwei allows for: project management, task management, brainstorming, resource hub, meetings and onboarding.
 
 Let's add another `div` with promotional text.
 
@@ -654,14 +654,14 @@ export default function LandingPage() {
           <ClipboardCheck className='h-6 w-6 mx-2'/>
         </div>
         <h1 className='text-3xl md:text-6xl text-center text-neutral-800 mb-6'>
-          <span className='mr-1'><strong>Visionize</strong></span> your tasks
+          <span className='mr-1'><strong>Verzwei</strong></span> your tasks
         </h1>
         <div className='text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit'>
           Turn your vision into reality.
         </div>
       </div>
       <div className='text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto'>
-        Fight mediocrity with Visionize. With just boards, lists and cards you can 
+        Fight mediocrity with Verzwei. With just boards, lists and cards you can 
         get a clear overview of your tasks. Then you can plan, prioritize, and
         execute your goals with confidence.      
         You can drag and drop tasks, add labels and due dates, attach files 
@@ -827,14 +827,14 @@ export default function LandingPage() {
           <ClipboardCheck className='h-6 w-6 mx-2'/>
         </div>
         <h1 className='text-3xl md:text-6xl text-center text-neutral-800 mb-6'>
-          <span className='mr-1'><strong>Visionize</strong></span> your tasks
+          <span className='mr-1'><strong>Verzwei</strong></span> your tasks
         </h1>
         <div className='text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit'>
           Turn your vision into reality.
         </div>
       </div>
       <div className='text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto'>
-        Fight mediocrity with Visionize. With just boards, lists and cards you can 
+        Fight mediocrity with Verzwei. With just boards, lists and cards you can 
         get a clear overview of your tasks. Then you can plan, prioritize, and
         execute your goals with confidence.      
         You can drag and drop tasks, add labels and due dates, attach files 
@@ -843,7 +843,7 @@ export default function LandingPage() {
 
       <Button className='mt-6' size='lg' asChild>
         <Link href="/sign-up">
-          Try Visionize for free
+          Try Verzwei for free
         </Link>
       </Button>
 
@@ -857,7 +857,7 @@ Now let's check the `localhost:3000` developer console pressing F12, under Eleme
 Find the element for our Link to confirm that the output is an `<a>` tag instead of a `<button>`.
 
 ```html
-  <a class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 mt-6" href="/sign-up">Try Visionize for free</a>
+  <a class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 mt-6" href="/sign-up">Try Verzwei for free</a>
 ```
 
 Awesome, using the `asChild` prop to `Button` component renders the button as a child of the `Link` component. This properly navigates to another page in our Next.js app when we click on it.
@@ -993,7 +993,7 @@ export default function LandingPage() {
         'text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto',
         textFont.className,
       )}>
-        Fight mediocrity with Visionize. With just boards, lists and cards you can 
+        Fight mediocrity with Verzwei. With just boards, lists and cards you can 
         get a clear overview of your tasks. Then you can plan, prioritize, and
         execute your goals with confidence.      
         You can drag and drop tasks, add labels and due dates, attach files 
@@ -1038,7 +1038,7 @@ const Logo = () => {
       <div className='hover:opacity-75 transition items-center gap-x-2 hidden md:flex'>
         <Image 
           src='/logo.svg'
-          alt='Logo for Visionize'
+          alt='Logo for Verzwei'
           height={30}
           width={30}
         />
@@ -1076,7 +1076,7 @@ const Logo = () => {
       <div className='hover:opacity-75 transition items-center gap-x-2 hidden md:flex'>
         <Image 
           src='/logo.svg'
-          alt='Logo for Visionize'
+          alt='Logo for Verzwei'
           height={30}
           width={30}
         />
@@ -1084,7 +1084,7 @@ const Logo = () => {
           'text-xl text-neutral-700 px-1 pt-1',
           headingFont.className,
         )}>
-          Visionize
+          Verzwei
         </p>
       </div>
     </Link>
@@ -1581,11 +1581,11 @@ This page is already centered as it shares the layout with the `(auth)` route gr
 
 ### Use both personal and organization accounts
 
-We have the decision to either have individual users and organizations or just organizations. Visionize will be for both individuals and organizations so that more will benefit.
+We have the decision to either have individual users and organizations or just organizations. Verzwei will be for both individuals and organizations so that more will benefit.
 
 Allow for both personal & organizational use
 
-This commit changes the app logic and UI to enable visionize to be used for both personal and organizational purposes. The user can now switch between different modes and access different features depending on their needs.
+This commit changes the app logic and UI to enable verzwei to be used for both personal and organizational purposes. The user can now switch between different modes and access different features depending on their needs.
 
 We can add the prop `hidePersonal` to `OrganizationalList` to remove selecting a personal account if we intend this app to only be between groups, teams and organizations. But we want this app to be tailored towards individual users too, so we omit that.
 
@@ -8743,12 +8743,12 @@ Going to use Unsplash image API to gather images for the user to choose from. Go
 After registering, click "Your applications" and click "New Applications". Go ahead and checkbox all the guides and terms. Add app name and description, the create application.
 
 ```sh
-Visionize
+Verzwei
 
 A kanban productivity app.
 ```
 
-We are now in the page for "Apply for production". If you are going to make your application live then you can run this but for visionize, which is currently in development, we won't apply for production.
+We are now in the page for "Apply for production". If you are going to make your application live then you can run this but for verzwei, which is currently in development, we won't apply for production.
 
 #### Add Unsplash API to environment variables
 
@@ -10513,7 +10513,7 @@ export const metadata: Metadata = {
 }
 ```
 
-When we return a `title` using `generateMetadata` in anywhere else besides the root layout, it passes in the new title and is interpolated in the variable `%s` while appending the `| ${siteConfigName}`. So the output would be: "Organization Name | Visionize".
+When we return a `title` using `generateMetadata` in anywhere else besides the root layout, it passes in the new title and is interpolated in the variable `%s` while appending the `| ${siteConfigName}`. So the output would be: "Organization Name | Verzwei".
 
 ## Board Page
 
@@ -25403,13 +25403,13 @@ export default function UpgradeModal() {
         </div>
         <div className='mx-auto p-6 space-y-6 text-neutral-700'>
           <h2 className='font-semibold text-xl'>
-            Upgrade to Visionize Pro.
+            Upgrade to Verzwei Pro.
           </h2>
           <p className='text-xs font-semibold text-neutral-600'>
-            Discover the finest offerings of Visionize. 
+            Discover the finest offerings of Verzwei. 
           </p>
           <div className='pl-3'>
-            {/* Promotional features of Visionize Pro */}
+            {/* Promotional features of Verzwei Pro */}
             <ul className='text-sm list-disc'>
               <li>Unlimited boards</li>
               <li>Enhanced security</li>
@@ -25446,7 +25446,7 @@ export default function UpgradeModal() {
         className='max-w-md p-0 overflow-hidden'
       >
           <div className='pl-3'>
-            {/* Promotional features of Visionize Pro */}
+            {/* Promotional features of Verzwei Pro */}
             <ul className='text-sm list-disc'>
               {/* List of promotional features... */}
             </ul>
@@ -25716,7 +25716,7 @@ feat: Fetch org subscription in redirectCheckout
 
 feat: Create Stripe session for checkout
 
-This commit adds logic to create a Stripe checkout session when no subscription exists. The session includes details for the "Visionize Pro" product, such as pricing and recurring intervals.
+This commit adds logic to create a Stripe checkout session when no subscription exists. The session includes details for the "Verzwei Pro" product, such as pricing and recurring intervals.
 
 feat: Implement redirectCheckout action logic
 
@@ -25771,8 +25771,8 @@ async function performAction(data: InputType): Promise<OutputType> {
             price_data: {
               currency: "USD",
               product_data: {
-                name: "Visionize Pro",
-                description: "Visionize Pro provides unlimited boards for your organization."
+                name: "Verzwei Pro",
+                description: "Verzwei Pro provides unlimited boards for your organization."
               },
               unit_amount: 2000,
               recurring: {
@@ -25940,7 +25940,7 @@ In production we will click "Add an endpoint", but since we are testing a webhoo
 
 Install the `Stripe CLI` and open up the terminal.
 
-- Make sure to navigate the the `admin-dashboard` nextjs project, in the directory: `/visionize`
+- Make sure to navigate the the `admin-dashboard` nextjs project, in the directory: `/verzwei`
 
 Follow the instructions on Stripe Dashboard > Webhooks > Test in a local environment.
 
@@ -25984,15 +25984,15 @@ With our **stripe webhook signing secret** we got from step 2, we can create our
 
 [Handle verification outcomes | Stripe Reference](https://stripe.com/docs/identity/handle-verification-outcomes)
 
-Navigate to our `visionize` dashboard project inside the directory `visionize\app\api`.
+Navigate to our `verzwei` dashboard project inside the directory `verzwei\app\api`.
 
-Now create the following folder and file: `visionize\app\api\webhook\route.ts`.
+Now create the following folder and file: `verzwei\app\api\webhook\route.ts`.
 
 1. Add the following imports:
 
 feat: Set up Stripe and database integration
 
-`visionize\app\api\webhook\route.ts`
+`verzwei\app\api\webhook\route.ts`
 ```ts
 import Stripe from 'stripe';
 import { NextResponse } from 'next/server';
@@ -26785,7 +26785,7 @@ Back on the terminal with Stripe CLI, run the above command: `stripe trigger pay
 
 4. Trigger events through the application
 
-   - In our visionize application, attempt to create a board in an organization that has passed its board limit threshold.
+   - In our verzwei application, attempt to create a board in an organization that has passed its board limit threshold.
    - Interact with the `UpgradeModal` by clicking the upgrade button
    - Fill out the checkout page with the following credit card credentials to simulate payments.
      - See https://docs.stripe.com/testing or [Stripe docs | Simulate payments to test your integration](https://docs.stripe.com/testing)
@@ -27793,7 +27793,7 @@ chore: Add install and generate scripts
 
 ```json
 {
-  "name": "visionize",
+  "name": "verzwei",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -27844,9 +27844,9 @@ These steps should help you successfully deploy your Next.js project to Vercel. 
 
 **Note:** The two environment variables we need to change *after* deployment is `NEXT_PUBLIC_APP_URL` and `STRIPE_WEBHOOK_SECRET`.
 
-This will have the project in deployment in vercel. We can visit it in our deployed domain, an example URL will be `https://visionize.vercel.app`.
+This will have the project in deployment in vercel. We can visit it in our deployed domain, an example URL will be `https://verzwei.vercel.app`.
 
-- The new `NEXT_PUBLIC_APP_URL` will be `https://visionize.vercel.app`
+- The new `NEXT_PUBLIC_APP_URL` will be `https://verzwei.vercel.app`
 
 In Stripe dashboard where we set up the the "Listen to Stripe events" we set the new endpoint URL and select the events to listen to. The events we listen to are:
 
@@ -27857,6 +27857,6 @@ We can add more or less events to listen to in our webhook found in `app\api\web
 
 Click the "Add events" button after selecting the events to listen to. Then we click "Add endpoint" to direct us to a new tab where we can reveal the **Signing secret** key. Copy the `signing secret` key and add it to the environment variables in vercel.
 
-- The new `STRIPE_WEBHOOK_SECRET` will be set to the new **Signing secret key**  with the endpoint URL of `https://visionize.vercel.app/api/webhook`.
+- The new `STRIPE_WEBHOOK_SECRET` will be set to the new **Signing secret key**  with the endpoint URL of `https://verzwei.vercel.app/api/webhook`.
 
 With that all set up this should allow the project to be in production and fully deployed for others to use. Well done.
